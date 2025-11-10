@@ -1,7 +1,19 @@
 **[Source available on GitHub](https://github.com/adamyaxley/Unformat)**
 
 # Unformat
-Parsing and extraction of original data from brace style "{}" formatted strings. It basically _unformats_ what you thought was formatted for good.
+Parsing and extraction of original data from brace style "{}" formatted strings. It basically _unformats_ what you thought was formatted for good. It is developed and maintained by [Adam Yaxley](https://github.com/adamyaxley).
+
+## Installation
+
+Run:
+```bash
+$ npm i unformat.cxx
+```
+
+And then include `unformat.h` as follows:
+```cxx
+#include "node_modules/unformat.cxx/unformat.h"
+```
 
 ## Quick Example
 Unformat is simple to use and works on all basic types. See the below example for extracting a `std::string` and an 'int'
@@ -46,3 +58,10 @@ StdStringStream                     844 ns        854 ns     896000
 StdRegex                           9975 ns      10010 ns      64000
 StdScanf                           1716 ns       1726 ns     407273
 ```
+
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/unformat.cxx)
