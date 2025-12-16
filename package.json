@@ -1,0 +1,29 @@
+{
+  "name": "unformat.cxx",
+  "version": "1.2019.3",
+  "description": "Fastest type-safe parsing library in the world for C++14 or C++17 (up to 300x faster than std::regex); Adam Yaxley (2017).",
+  "keywords": [
+    "c",
+    "library",
+    "parsing",
+    "formatting",
+    "unformat",
+    "unformatted",
+    "fast",
+    "safe",
+    "type-safe",
+    "cpp",
+    "c++",
+    "cxx"
+  ],
+  "homepage": "https://github.com/nodef/unformat.cxx#readme",
+  "bugs": {
+    "url": "https://github.com/nodef/unformat.cxx/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/unformat.cxx.git"
+  },
+  "license": "UNLICENSED",
+  "main": "unformat.h"
+}
