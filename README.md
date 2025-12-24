@@ -1,21 +1,55 @@
 **[Source available on GitHub](https://github.com/adamyaxley/Unformat)**
 
 # Unformat
+
 Parsing and extraction of original data from brace style "{}" formatted strings. It basically _unformats_ what you thought was formatted for good. It is developed and maintained by [Adam Yaxley](https://github.com/adamyaxley).
+
+<br>
 
 ## Installation
 
 Run:
-```bash
+
+```sh
 $ npm i unformat.cxx
 ```
 
 And then include `unformat.h` as follows:
+
 ```cxx
+// main.cxx
 #include "node_modules/unformat.cxx/unformat.h"
+
+int main() { /* ... */ }
 ```
 
+And then compile with `clang++` or `g++` as usual.
+
+```bash
+$ clang++ main.cxx  # or, use g++
+$ g++     main.cxx
+```
+
+You may also use a simpler approach:
+
+```cxx
+// main.cxx
+#include <unformat.h>
+
+int main() { /* ... */ }
+```
+
+If you add the path `node_modules/unformat.cxx` to your compiler's include paths.
+
+```bash
+$ clang++ -I./node_modules/unformat.cxx main.cxx  # or, use g++
+$ g++     -I./node_modules/unformat.cxx main.cxx
+```
+
+<br>
+
 ## Quick Example
+
 Unformat is simple to use and works on all basic types. See the below example for extracting a `std::string` and an 'int'
 ```c++
 std::string name;
@@ -34,18 +68,31 @@ unformat("Harry is 18 years old.", format, name, age);
 // name == "Harry" and age == 18
 ```
 
+<br>
+
 ## How do I use this library?
+
 Unformat is a single-file header only library so integration is easy. All you need to do is copy `unformat.h` into your project, and away you go.
 
+<br>
+
 ## Public Domain
+
 This software is completely open source and in the public domain. See LICENSE for details.
 
+<br>
+
 ## Contributing
+
 Pull requests are very welcome. You may also create Issues and I will have a look into it as soon as I can.
 
+<br>
+
 ## Speed
+
 Unformat is super awesome back to the future style lightning fast compared to traditional parsing methods. Below is the output from Google Benchmark on unformat_benchmark.cpp. Great Scott!
-```
+
+```bash
 Run on (16 X 2993 MHz CPU s)
 03/13/19 18:10:57
 --------------------------------------------------------------------
@@ -63,6 +110,6 @@ StdScanf                           1716 ns       1726 ns     407273
 <br>
 
 
+[![SRC](https://img.shields.io/badge/src-repo-green?logo=Org)](https://github.com/adamyaxley/Unformat)
 [![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
 ![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/unformat.cxx)
-[![SRC](https://img.shields.io/badge/src-repo-green?logo=Org)](https://github.com/adamyaxley/Unformat)

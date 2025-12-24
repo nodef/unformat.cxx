@@ -1,9 +1,6 @@
-# Library files
-unformat
-unformat.h
-
-# Build directory
+# Build artifacts
 .build/
+*.exe
 
 # Logs
 logs
